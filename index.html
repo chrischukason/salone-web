@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Salone Digital Solutions - web design, hosting and cloud deployment from Freetown, Sierra Leone.">
+  <title>Salone Digital Solutions</title>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <a class="brand" href="#top"><img src="images/logo.svg" alt="" width="36" height="36"><span>Salone Digital</span></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+      <a class="btn btn-small" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Freetown, Sierra Leone</p>
+        <h1>We build, host and ship<br><span>modern web applications.</span></h1>
+        <p class="lead">From first design to a live server, Salone Digital Solutions takes your idea online with fast, secure and reliable technology.</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Start a project</a>
+          <a class="btn btn-ghost" href="#services">Our services</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="window">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <pre><code><b class="g">$</b> git clone salone-web
+<b class="g">$</b> docker build -t salone-web .
+<b class="g">$</b> docker run -d -p 8080:80 salone-web
+<b class="b">&#10003;</b> Live on http://localhost</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><strong>50+</strong><span>Websites launched</span></div>
+      <div><strong>99.9%</strong><span>Uptime target</span></div>
+      <div><strong>24/7</strong><span>Monitoring</span></div>
+      <div><strong>5 yrs</strong><span>Experience</span></div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>What we do</h2>
+      <p class="sub">Everything you need to get online and stay online.</p>
+      <div class="grid">
+        <article class="card c1">
+          <div class="icon">&#127912;</div>
+          <h3>Web Design</h3>
+          <p>Clean, responsive designs that look great on phones, tablets and desktops.</p>
+        </article>
+        <article class="card c2">
+          <div class="icon">&#128187;</div>
+          <h3>Web Development</h3>
+          <p>Fast, maintainable applications built with HTML, CSS and modern tooling.</p>
+        </article>
+        <article class="card c3">
+          <div class="icon">&#9729;&#65039;</div>
+          <h3>Hosting &amp; Deployment</h3>
+          <p>Ubuntu servers, Docker containers and Nginx configured for performance.</p>
+        </article>
+        <article class="card c4">
+          <div class="icon">&#128274;</div>
+          <h3>Security</h3>
+          <p>HTTPS, firewalls and regular updates to keep your site and users safe.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section alt">
+      <h2>How we deploy</h2>
+      <p class="sub">A simple, repeatable workflow from code to live site.</p>
+      <ol class="steps">
+        <li><b>1</b><h3>Version control</h3><p>Code lives in a GitHub repository.</p></li>
+        <li><b>2</b><h3>Clone</h3><p>The project is pulled onto an Ubuntu server.</p></li>
+        <li><b>3</b><h3>Containerise</h3><p>Docker packages the app into an image.</p></li>
+        <li><b>4</b><h3>Serve</h3><p>Nginx delivers it to visitors on port 80.</p></li>
+      </ol>
+    </section>
+
+    <section id="about" class="section about">
+      <div>
+        <h2>About us</h2>
+        <p>Salone Digital Solutions is a Sierra Leonean software company helping small businesses, schools and organisations build a strong online presence.</p>
+        <p>We believe good technology should be simple, affordable and built to last.</p>
+        <ul class="ticks">
+          <li>Local team, global standards</li>
+          <li>Transparent pricing</li>
+          <li>Ongoing support after launch</li>
+        </ul>
+      </div>
+      <div class="flagcard" aria-hidden="true">
+        <span class="f1"></span><span class="f2"></span><span class="f3"></span>
+        <p>Proudly built in<br>Sierra Leone</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Let's work together</h2>
+      <p class="sub">Tell us about your project and we will reply within one working day.</p>
+      <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='Message sent!';">
+        <input type="text" placeholder="Your name" required aria-label="Your name">
+        <input type="email" placeholder="Email address" required aria-label="Email address">
+        <textarea rows="4" placeholder="How can we help?" required aria-label="Message"></textarea>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="flagbar"><i></i><i></i><i></i></div>
+    <p>&copy; 2026 Salone Digital Solutions &middot; Freetown, Sierra Leone</p>
+    <p class="small">Deployed with Ubuntu &middot; Git &middot; Docker &middot; Nginx</p>
+  </footer>
+
+</body>
+</html>
